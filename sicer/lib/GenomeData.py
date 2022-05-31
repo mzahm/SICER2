@@ -47,7 +47,11 @@ mm10_chroms = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', '
 
 mm39_chroms = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9',
                'chr10', 'chr11', 'chr12', 'chr13', 'chr14', 'chr15', 'chr16', 'chr17',
-               'chr18', 'chr19', 'chrX', 'chrY', 'chrM']
+               'chr18', 'chr19', 'chrX', 'chrY', 'chrMT']
+
+mm39_nochr_chroms = ['1', '2', '3', '4', '5', '6', '7', '8', '9',
+                     '10', '11', '12', '13', '14', '15', '16', '17',
+                     '18', '19', 'X', 'Y', 'MT']
 
 rn4_chroms = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9',
               'chr10', 'chr11', 'chr12', 'chr13', 'chr14', 'chr15', 'chr16', 'chr17',
@@ -113,6 +117,15 @@ mm39_chrom_lengths = {'chr1': 195154279, 'chr2': 181755017, 'chr3': 159745316,
                       'chr16': 98008968, 'chr17': 95294699, 'chr18': 90720763,
                       'chr19': 61420004, 'chrX': 169476592, 'chrY': 91455967,
                       'chrM': 16299}
+
+mm39_nochr_chrom_lengths = {'1': 195154279, '2': 181755017, '3': 159745316,
+                            '4': 156860686, '5': 151758149, '6': 149588044,
+                            '7': 144995196, '8': 130127694, '9': 124359700,
+                            '10': 130530862, '11': 121973369, '12': 120092757,
+                            '13': 120883175, '14': 125139656, '15': 104073951,
+                            '16': 98008968, '17': 95294699, '18': 90720763,
+                            '19': 61420004, 'X': 169476592, 'Y': 91455967,
+                            'MT': 16299}
 
 rn4_chrom_lengths = {'chr1': 267910886, 'chr2': 258207540, 'chr3': 171063335,
                      'chr4': 187126005, 'chr5': 173096209, 'chr6': 147636619,
@@ -192,6 +205,7 @@ species_chroms = {'mm8': mm8_chroms,
                   'mm9': mm9_chroms,
                   'mm10': mm10_chroms,
                   'mm39' : mm39_chroms,
+                  'mm39_nochr' : mm39_nochr_chroms,
                   'hg18': hg18_chroms,
                   'hg19': hg19_chroms,
                   'hg38': hg38_chroms,
@@ -207,6 +221,7 @@ species_chrom_lengths = {'mm8': mm8_chrom_lengths,
                          'mm9': mm9_chrom_lengths,
                          'mm10': mm10_chrom_lengths,
                          'mm39' : mm39_chrom_lengths,
+                         'mm39_nochr' : mm39_nochr_chrom_lengths,
                          'hg18': hg18_chrom_lengths,
                          'hg19': hg19_chrom_lengths,
                          'hg38': hg38_chrom_lengths,
