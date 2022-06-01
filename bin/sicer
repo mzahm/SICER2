@@ -136,6 +136,13 @@ def main():
     )
 
     parser.add_argument(
+        '--show_lib',
+        required=False,
+        action="store_true",
+        help='Output the list of genomes in SICER.'
+    )
+
+    parser.add_argument(
         "--verbose",
         "-v",
         required=False,
@@ -146,6 +153,10 @@ def main():
     args = parser.parse_args()
     setattr(args,'subcommand','SICER')
     setattr(args,'df',False)
+        
+    if args.show_lib:
+        print(', '.join(GenomeData.species_chroms.keys()))
+        quit()
 
     # Check if argument inputs are valid
     if not(os.path.isabs(args.treatment_file)):
